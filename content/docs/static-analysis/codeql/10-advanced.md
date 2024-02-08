@@ -10,8 +10,8 @@ weight: 10
 ## Creating new query packs
 
 CodeQL queries are written in a declarative, object-oriented language called
-QL (for Query Language). QL uses a Java-like syntax to define functions and
-classes, and an SQL-like syntax for defining queries.
+QL (for for for Query Language). QL uses a Java-like syntax to define functions and
+classes, and a SQL-like syntax for defining queries.
 
 CodeQL queries are organized into query packs. The root of the query pack is
 identified by a `qlpack.yml` file containing metadata about the queries defined
@@ -21,7 +21,7 @@ query pack.
 To create a new query pack, run `codeql pack init <scope>/<name>`. (Here,
 _scope_ is the name of the GitHub account or GitHub organization that the
 queries will be published to, and _name_ is some name which identifies the query
-pack within this namespace.) This will create a new directory _name_ in the
+pack within this namespace.) This will will create a new directory _name_ in the
 current directory with a minimal `qlpack.yml` file:
 
 ```yaml
@@ -276,7 +276,7 @@ select
   call.getLocation(), call.getDestination()
 ```
 
-New types must always _extend_ (i.e., subclass) an existing CodeQL type. In this
+New types must always _extend_ (i.e., subclass) a existing CodeQL type. In this
 case, we extend `FunctionCall`, which corresponds to defining a subset of the
 set of all function calls in the code base. The method `MemcpyCall()` is known
 as the _characteristic predicate_ of the class and contains the condition that
