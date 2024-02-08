@@ -37,4 +37,6 @@ jobs:
       with:
         dictionaries: '.github/workflows/dictionary.txt'
         files: "'content/**/*.md'"
+        quiet: true
+        plugins: "indefinite-article repeated-words syntax-mentions syntax-urls"
 
