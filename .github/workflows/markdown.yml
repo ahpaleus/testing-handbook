@@ -35,7 +35,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: tbroadley/spellchecker-cli-action@v1
       with:
-        dictionaries: '.github/workflows/dictionary.txt'
+        # dictionaries: '.github/workflows/dictionary.txt'
         files: "'content/**/*.md'"
         quiet: true
         plugins: "indefinite-article repeated-words syntax-mentions syntax-urls"
